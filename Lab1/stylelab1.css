@@ -3,7 +3,7 @@ ul{
     margin: 0;
     padding: 0;
 }
-li{
+#liNav{
     display: inline;
     margin: .5em;
 }
@@ -14,3 +14,6 @@ section{
     margin: 20px;
 }
 h1{margin: 10px;}
+ol{
+    list-style-type: inherit;
+}

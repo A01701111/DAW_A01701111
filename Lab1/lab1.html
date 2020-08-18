@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!--informacion escencial para html-->
@@ -19,11 +19,11 @@
 
         <nav>
             <ul>
-                <li id="liNav"><a href="#aboutMe">About me</a></li>
-                <li id="liNav"><a href="#inv">Investigación</a></li>
-                <li id="liNav"><a href="#preg">Preguntas</a></li>
-                <li id="liNav"><a href="#Ref">Referencias</a></li>
-                
+                <li class="liNav"><a href="#aboutMe">About me</a></li>
+                <li class="liNav"><a href="#inv">Investigación</a></li>
+                <li class="liNav"><a href="#preg">Preguntas</a></li>
+                <li class="liNav"><a href="#Ref">Referencias</a></li>
+
             </ul>
         </nav>
         <hr>
@@ -33,18 +33,18 @@
 
     <section>
         <!--sección donde viene toto lo importante-->
-        <section id="aboutMe">
-            <h2>Acerca de mi</h2>
+        <h2>Acerca de mi</h2>
 
-            <p>Nombre Sebastian Resendiz <br>
-                Matricula A01701111 - Contacto <a href="mailto: a01701111@itesm.mx"
-                    target="_blank">a01701111@itesm.mx</a>
-            </p>
-            <p> Hobbies: tengo pocos hobbies, pero en principal es hacer ejercicio, en principal levntamiento de pesas.
-                También los videojugos, la cocina y la tecnologia. <br>
-                Pasiones: Me apaciona cocinar más que nada en enste mundo.
-            </p>
-        </section>
+
+
+        <p>Nombre Sebastian Resendiz <br>
+            Matricula A01701111 - Contacto <a href="mailto:a01701111@itesm.mx" target="_blank">a01701111@itesm.mx</a>
+        </p>
+        <p> Hobbies: tengo pocos hobbies, pero en principal es hacer ejercicio, en principal levntamiento de pesas.
+            También los videojugos, la cocina y la tecnologia. <br>
+            Pasiones: Me apaciona cocinar más que nada en enste mundo.
+        </p>
+
         <section id="Inv">
             <h2>Investigación</h2>
             <p>URL: mecanismo que usan los exploradores web, browser, para conseguir los recursos publicados en la web.
@@ -75,62 +75,75 @@
                 tecnologías en desde el DOM de html y uso de xml para poder hacer acciones en una página web.
             </p>
             <section id="preg">
-            <h2>Preguntas</h2>
-            <p>¿Cuál es la diferencia entre Internet y la World Wide Web?<br>
-                La internet es una red global de computadoras, www es un sistema de información que es accedido a través
-                del internet.</p>
+                <h2>Preguntas</h2>
+                <p>¿Cuál es la diferencia entre Internet y la World Wide Web?<br>
+                    La internet es una red global de computadoras, www es un sistema de información que es accedido a
+                    través
+                    del internet.</p>
 
-            <p>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</p>
-            <ol>
-                <li>Get: se utiliza para pedir datos de una fuente específica. </li>
-                <li>Head: Pide los headers que serían regresados si se hiciera el uso del método get.</li>
-                <li>Post: Envía información al servidor, el uso continuo de este, tiene efectos diferentes, a lo
-                    contrario de put.</li>
-                <li>Put: Envía información al servidor y reemplaza por completo lo que sea que existe en la URL destino.
-                </li>
-                <li>Patch: aplicar modificaciones parciales a algún recurso.</li>
-                <li>Delete: elimina un recurso en específico.</li>
-            </ol>
-            <p>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y
-                contraseña en algún sitio? ¿Por qué?
-                Se debe de utilizar el método post, debido que la información va oculto</p>
-            ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?
-            GET</p>
-            <p>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?
-                No ocurrió ningún error, es un código de respuesta exitosa de HTTP</p>
-            <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al
-                sitio y se encontró con un error 404? ¿Por qué?
-                No es responsabilidad del desarrollador debido a que 404 es de un link no disponible, roto o oculto por
-                el
-                desarrollador</p>
-            <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al
-                sitio y se encontró con un error 500? ¿Por qué?
-                Si, representa error de parte del servidor.</p>
-            <p>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos
-                elementos
-                de HTML 4 que en HTML5 estén desaprobados.
-                Son tags que han sido reemplazadas por tags más nuevas y útiles. por ejemplo: <br>
-                &ltacronym&gt, &ltapplet&gt, &ltbasefont&gt, &ltbig&gt, &ltcenter&gt, &ltdir&gt, &ltfont&gt,
-                &ltframe&gt,
-                &ltframeset&gt, &ltisindex&gt, &ltnoframes&gt, &lts&gt, &ltstrike&gt, &lttt&gt y &ltu&gt </p>
+                <p>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</p>
+                <ol>
+                    <li>Get: se utiliza para pedir datos de una fuente específica. </li>
+                    <li>Head: Pide los headers que serían regresados si se hiciera el uso del método get.</li>
+                    <li>Post: Envía información al servidor, el uso continuo de este, tiene efectos diferentes, a lo
+                        contrario de put.</li>
+                    <li>Put: Envía información al servidor y reemplaza por completo lo que sea que existe en la URL
+                        destino.
+                    </li>
+                    <li>Patch: aplicar modificaciones parciales a algún recurso.</li>
+                    <li>Delete: elimina un recurso en específico.</li>
+                </ol>
+                <p>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu
+                    usuario y
+                    contraseña en algún sitio? ¿Por qué?
+                    Se debe de utilizar el método post, debido que la información va oculto</p>
+                <p>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un
+                    URL?
+                    GET</p>
+                <p>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún
+                    error?
+                    No ocurrió ningún error, es un código de respuesta exitosa de HTTP</p>
+                <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder
+                    al
+                    sitio y se encontró con un error 404? ¿Por qué?
+                    No es responsabilidad del desarrollador debido a que 404 es de un link no disponible, roto o oculto
+                    por
+                    el
+                    desarrollador</p>
+                <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder
+                    al
+                    sitio y se encontró con un error 500? ¿Por qué?
+                    Si, representa error de parte del servidor.</p>
+                <p>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos
+                    elementos
+                    de HTML 4 que en HTML5 estén desaprobados.
+                    Son tags que han sido reemplazadas por tags más nuevas y útiles. por ejemplo: <br>
+                    &lt;acronym&gt;, &lt;applet&gt;, &lt;basefont&gt;, &lt;big&gt;, &lt;center&gt;, &lt;dir&gt;,
+                    &lt;font&gt;,
+                    &lt;frame&gt;,
+                    &lt;frameset&gt;, &lt;isindex&gt;, &lt;noframes&gt;, &lt;s&gt;, &lt;strike&gt;, &lt;tt&gt; y
+                    &lt;u&gt; </p>
 
-            <p>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
-                Apoyo de multimedia
-                Más estandarizado
-                Tags nuevos y más adecuados
-                Mejor manejo de errores</p>
-            <p>¿Qué componentes de estructura y estilo tiene una tabla?<br>
-                Estructura: &lttable&gt, &lttr&gt, &ltth&gt, &lttd&gt, &ltcaption&gt, &ltcolgroup&gt, &ltcol&gt,
-                &ltthead&gt, &lttbody&gt y &lttfoot&gt <br>
-                Estilo: border, border-collapse, border-spacing, padding, text-align, colspan y rowspan.</p>
+                <p>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
+                    Apoyo de multimedia
+                    Más estandarizado
+                    Tags nuevos y más adecuados
+                    Mejor manejo de errores</p>
+                <p>¿Qué componentes de estructura y estilo tiene una tabla?<br>
+                    Estructura: &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;caption&gt;, &lt;colgroup&gt;,
+                    &lt;col&gt;,
+                    &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt; <br>
+                    Estilo: border, border-collapse, border-spacing, padding, text-align, colspan y rowspan.</p>
 
-            <p>¿Cuáles son los principales controles de una forma HTML5?
-                &ltlabel&gt, &ltinput&gt, zonas de texto, botones radio, checkboxes, botón de envío y varios otros
-                atributos.</p>
-            <p>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para
-                descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)
-                Utilizo chrome, 473/555.</p>
-            <p>¿Cuál es el ciclo de vida de los sistemas de información?</p>
+                <p>¿Cuáles son los principales controles de una forma HTML5?
+                    &lt;label&gt;, &lt;input&gt;, zonas de texto, botones radio, checkboxes, botón de envío y varios
+                    otros
+                    atributos.</p>
+                <p>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para
+                    descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que
+                    utilizas)
+                    Utilizo chrome, 473/555.</p>
+                <p>¿Cuál es el ciclo de vida de los sistemas de información?</p>
                 <ol>
                     <li>Investigación</li>
                     <li>Analizis de Requerimientos</li>
@@ -139,7 +152,7 @@
                     <li>Implementación</li>
                     <li>Evaluacion</li>
                 </ol>
-            <p> ¿Cuál es el ciclo de desarrollo de sistemas de información?
+                <p> ¿Cuál es el ciclo de desarrollo de sistemas de información?</p>
                 <ol>
                     <li>Planificación del sistema</li>
                     <li>Analizis</li>
@@ -149,8 +162,8 @@
                     <li>Implementación</li>
                     <li>Mantenimiento</li>
                 </ol>
-            </p>
-        </section>
+
+            </section>
         </section>
         <section id="Ref">
             <h2>Referncias</h2>

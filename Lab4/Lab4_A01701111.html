@@ -1,22 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Lab 4</title>
 </head>
+
 <body>
-    <h1>Laboratorio 4: Fundamentos de JavaScript</h1>
-    
-    <input type="number" id="genTab" placeholder="Enter a number">
-    <button type="button" onclick="generadorTabla()">Submit</button>
-    <div id="tb1"></div>
-    <br><br>
-    <button type="button" onclick="genNumAl()">Generate Numbers</button>
-    <div id="nums"></div>
-    <div id="inpNums"></div>
+    <section>
+        <h1>Laboratorio 4: Fundamentos de JavaScript</h1>
+        <p>Generar Tabla con numero dado por el usuario</p>
+        <input type="number" id="genTab" placeholder="Enter a number">
+        <button type="button" onclick="generadorTabla()">Submit</button>
+        <div id="tb1"></div>
+        <br><br>
+        <button type="button" onclick="genNumAl()">Generate Numbers</button>
+        <div id="nums"></div>
+        <div id="res"></div>
+        <br><br>
+        <button type="button" onclick="counter()">Contar numeros en el arreglo</button>
+        <div id="resCounter"></div>
+        <br><br>
+        <button type="button" onclick="promedio()">Generar Promedio</button>
+        <div id="tabAve"></div>
+        <br><br>
+        <p>Invierte el numero que quieras </p>
+        <input type="number" id="invNum" placeholder="Enter a number">
+        <button type="button" onclick="inverso()">Submit</button>
+        <div id="resInv"></div>
+        <br><br>
+        <p>Problema a resolver balanced brackets. Ingresa Brackets como &#40; &#41; , &#91; &#93; y &#123; &#125;</p>
+        <input type="text" id="Balan" placeholder="Enter a number">
+        <button type="button" onclick="balancedBrackets()">Submit</button>
+        <div id="resBal"></div>
+    </section>
+    <section>
+        <h2>Preguntas</h2>
+        <br>
+        <p>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</p>
+        <p>A pesar de sonar muy parecido, JAVA y JavaScript son absolutamente diferentes.</p>
+        <img src="dif.jpg" alt="imagen de comparacion JavaScript y Java">
+        <br>
+        <p>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</p>
+        <ul>
+            <li>getDate()</li>
+            <li>getDay()</li>
+            <li>setTime()</li>
+            <li>toString()</li>
+            <li>toJSON()</li>
+        </ul>
+        <p>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</p>
+        <ul>
+            <li>from()</li>
+            <li>isArray()</li>
+            <li>length()</li>
+            <li>concat()</li>
+            <li>fill()</li>
+            <li>pop()</li>
+            <li>push()</li>
+        </ul>
+        <p>¿Cómo se declara una variable con alcance local dentro de una función?<br>Let</p>
+        <p>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?
+            <br>
+            Puede tener problemas con otras variables, ademas de tener problemas de scope
+        </p>
+        <p>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?
+            <br>    match(), para hacer captcha por ejemplo. 
+        </p>
+        <article>
+            <h2>Referencias Preguntas</h2>
+            <a href="https://towardsdatascience.com/java-vs-javascript-which-is-the-best-choice-for-2019-a41ee2d3f78d">https://towardsdatascience.com/java-vs-javascript-which-is-the-best-choice-for-2019-a41ee2d3f78d</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date</a>
+        </article>
+    </section>
 
     <script src="Lab4_A01701111.js"></script>
 </body>
-</html> 
+
+</html>

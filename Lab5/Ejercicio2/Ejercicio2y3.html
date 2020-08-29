@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Lab 5: Programación orientada a eventos</h1>
+    <section>
+        <div id="rect">
+            <div class="articulo">
+                <img src="avion.jpg" alt="Avion presidencial" class="images">
+                <div class="precios">
+                    <p>Avion Presidencial</p>
+                    <p>Precio: 150,000,000 USD</p>
+                    <p>3,263,040,000 mxn</p>
+                </div>
+                <div class="buttons">
+                    <button class="minus" id="minArt1" onclick="carrito(0,1)">-</button>
+                    <div class="artCount" id="artCount1"></div>
+                    <button class="plus" id="plusArt1" onclick="carrito(0,0)">+</button>
+                </div>
+            </div>
+            <div class="articulo">
+                <img src="guerrero2.png" alt="Estado de guerrero" class="images">
+                <div class="precios">
+                    <p>Estado de Guerrero</p>
+                    <p>Precio: 4.60 USD</p>
+                    <p>100 pesitos</p>
+                </div>
+                <div class="buttons">
+                    <button class="minus" id="minArt1" onclick="carrito(1,1)">-</button>
+                    <div class="artCount" id="artCount2"></div>
+                    <button class="plus" id="plusArt1" onclick="carrito(1,0)">+</button>
+                </div>
+            </div>
+            <div class="articulo">
+                <img src="Bacacho.png" alt="Un delicioso y poderozo Bacacho" class="images">
+                <div class="precios">
+                    <p>Bacardi blanco</p>
+                    <p>Precio: 8.50 USD</p>
+                    <p>185 pesos</p>
+                </div>
+                <div class="buttons">
+                    <button class="minus" id="minArt1" onclick="carrito(2,1)">-</button>
+                    <div class="artCount" id="artCount3"></div>
+                    <button class="plus" id="plusArt1" onclick="carrito(2,0)">+</button>
+                </div>
+            </div>
+        </div>
+        <div id="check">
+            <p>Total: </p>
+            <p id="total"></p>
+            <p>Total + iva: </p>
+            <p id="totalIva"></p>
+        </div>
+    </section>
+    <section>
+        <h2>Genera una Contraseña</h2>
+        <div id="ejercicio3">
+            
+                <label for="nombre">Ingresa tu nombre</label>
+                <input type="text" id="nombre">
+
+                <label for="edad">Ingrea tu edad</label>
+                <input type="text" id="edad">
+
+                <label for="palabra">Ingresa una palabra random</label>
+                <input type="text" id="txt">
+                <button onclick="genPass()">Genertate</button>
+                <br>
+                <p id="pass"></p>
+        </div>
+    </section>
+    <section>
+        <p>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?
+            <br>
+        Para evitar injecciones de codigo además de problemas de atuentificacion 
+        </p>
+        <p>
+            ¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?<br>
+            modificando el codigo de JavaScript
+        </p>
+        <p>
+        Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?<br>
+        Para poder darle formato y por seguridad
+        </p>
+    </section>
+    <script src="ej2.js"></script>
+</body>
+</html>

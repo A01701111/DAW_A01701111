@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#marcaAgua{
+    
+    width: 250px;
+    height: 100px;
+
+    
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    text-align:center;
+    opacity: 0.3;
+
+    font-size: 24px;
+
+}
+.box{
+    margin:10px 0 10px 0;
+}
+h1{
+    font-size: 3em;
+}
+h1:hover{
+    font-style: italic;
+    color: rgb(70, 21, 169);
+}
+
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+#mssg{
+    font-size: 50px;
+    color: pink;
+    background-color: rebeccapurple;
+    text-align: center;
+}
+#div1, #div2 {
+    
+    width: 300px;
+    height: 168px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+
+#preg{
+    margin: 20px;
+    padding:10px;
+}
+#preg p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

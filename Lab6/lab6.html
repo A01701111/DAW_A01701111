@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="marcaAgua">
+        <p>Marca de agua</p>
+        <p>Sebastian Resendiz</p>
+    </div>
+    <h1>Lab 6: Documentos dinámicos con JavaScript</h1>
+
+    <div class="box">
+        <form>
+            <label for="docum">Escribe los numeros de tu tarjeta de credito</label>
+            <input type="text" id="docum" name="document" title="Andale" autocomplete="off">
+
+        </form>
+    </div>
+    <div id="message">
+        <p>
+            No te preocupes, es para ayudar a un principe de Nigeria ;)
+        </p>
+
+    </div>
+    <div id="mssg1"></div>
+    <div id="mssg2"></div>
+    <section>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="ricardo.jpg" draggable="true" ondragstart="drag(event)" id="drag1">
+          </div>
+          
+          <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </section>
+    <section id="preg">
+        <h2>Preguntas</h2>
+        <p>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?<br>
+        Los valores y sus diferecias son:
+        <ul>
+            <li>static: No es afectado por las propiedades top, bottom, left, and right </li>
+            <li>relative: Actua como statico, actua conforme la posicion relativa pero te deja cambiar las propiedades de top, bottom, left, and right </li>
+            <li>fixed:Se queda en el mismo lado aun que el usuario baje en la pagina </li>
+            <li>absolute: Es colocado serca del ancestro, es decir padre. El padre actuara como si no existiera el hijo</li>
+            <li>sticky: Se situa en como el usuario baja atravez de la pagina</li>
+        </ul>
+        </p>
+        <p>¿Cuáles son los valores estándar para la propiedad visibility?<br>
+            <ul>
+                <li>visible</li>
+                <li>hidden</li>
+                <li>collapse</li>
+                <li>initial</li>
+                <li>inherit</li>
+            </ul>
+        </p>
+        <p>¿Qué es el zIndex y para qué sirve?
+            <br>
+            El orden en como es presentado elementos que se sobreponen. Los elementos de mayor valor cubren a los mas pequeños.
+        </p>
+    </section>
+    <div id="Referncias">
+        <h2>Referencias</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/jsref/met_win_setinterval.asp"
+                    target="_blank">https://www.w3schools.com/jsref/met_win_setinterval.asp</a></li>
+            <li><a href="https://www.w3schools.com/jsref/met_win_settimeout.asp"
+                    target="_blank">https://www.w3schools.com/jsref/met_win_settimeout.asp</a></li>
+            <li><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">https://www.w3schools.com/css/css_positioning.asp</a></li>
+            <li><a href="https://css-tricks.com/almanac/properties/p/position/" target="_blank">https://css-tricks.com/almanac/properties/p/position/</a></li>
+
+        </ul>
+    </div>
+    <script src="lab6.js"></script>
+</body>
+
+</html>

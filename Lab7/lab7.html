@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--informacion escencial para html-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-light">
+    <header>
+        <!--header y nav-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container">
+
+                <a class="nav-link text-light" href="#aboutMe">About me </a>
+                <a class="nav-link text-light" href="#inv">Investigación</a>
+                <a class="nav-link text-light" href="#preg">Preguntas </a>
+                <a class="nav-link text-light" href="#Ref">Referencias </a>
+
+            </div>
+        </nav>
+
+
+        <h1 class="h1 display-3 mx-2">Laboratorio 1: Introducción a las aplicaciones web, HTML5 y
+            ciclo de
+            vida de los sistemas de información
+        </h1>
+
+
+    </header>
+
+    <section class="m-3">
+        <!--sección donde viene toto lo importante-->
+        <h2 class="display-4 mb-2">Acerca de mi</h2>
+
+
+
+        <p>Nombre Sebastian Resendiz <br>
+            Matricula A01701111 - Contacto <a href="mailto:a01701111@itesm.mx" target="_blank">a01701111@itesm.mx</a>
+        </p>
+        <p> Hobbies: tengo pocos hobbies, pero en principal es hacer ejercicio, en principal levntamiento de pesas.
+            También los videojugos, la cocina y la tecnologia. <br>
+            Pasiones: Me apaciona cocinar más que nada en enste mundo.
+        </p>
+    </section>
+    <section id="Inv" class="my-2 mx-3">
+        <h2 class="display-4 my-2">Investigación</h2>
+        <p>URL: mecanismo que usan los exploradores web, browser, para conseguir los recursos publicados en la web.
+            URL significa Uniform Resource Locator, este puede ser un sitio de html, css, una imagen, etc.</p>
+
+        <p>MIME: Son siglas para Multipurpose Internet Mail Extensions, es un identificador para archivos en el
+            internet que indican la naturaleza del archivo.</p>
+
+        <p> Códigos de errores HTTP: indican si alguna solicitud fue completada de manera correcta.</p>
+        <ul>
+            <li>100-199: Respuesta de información</li>
+            <li>200-299: Respuestas exitosas</li>
+            <li>300-399: Redireccionamiento </li>
+            <li>400-499: Error del cliente</li>
+            <li>500-599: Error del servidor</li>
+        </ul>
+        <p>HTTP: Significa Hypertext Transfer Protocol es el protocolo usado para la transferencia en la web.</p>
+        <p>HTML5: La quinta iteración de Hypertext Markup Language es un lenguaje de marcaje que permite la
+            modificación y modelación de la página web.</p>
+        <p>JavaScript: Diseñado al principio por Brendan Eich, JavaScript es un lenguaje de programación que hace
+            uso de los paradigmas de programación funcional, event-driven e imperativo para poder hacer scripting en
+            las páginas web.</p>
+        <p>PHP: Es un lenguaje para enfoque general que es usado para el desarrollo web, es usado del lado del
+            servidor para hacer sitios web.</p>
+        <p>JSP: Java Server Pages (JSP) es una tecnología utilizada del lado del servidor que permite la creación de
+            aplicaciones web.</p>
+        <p>AJAX: significa Asynchronous JavaScript And XML; Ajax no es un sitio web. Es una combinación de
+            tecnologías en desde el DOM de html y uso de xml para poder hacer acciones en una página web.
+        </p>
+        <section id="preg">
+            <h2 class="display-4 my-2">Preguntas</h2>
+            <p>¿Cuál es la diferencia entre Internet y la World Wide Web?<br>
+                La internet es una red global de computadoras, www es un sistema de información que es accedido a
+                través
+                del internet.</p>
+
+            <p>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</p>
+            <ol>
+                <li>Get: se utiliza para pedir datos de una fuente específica. </li>
+                <li>Head: Pide los headers que serían regresados si se hiciera el uso del método get.</li>
+                <li>Post: Envía información al servidor, el uso continuo de este, tiene efectos diferentes, a lo
+                    contrario de put.</li>
+                <li>Put: Envía información al servidor y reemplaza por completo lo que sea que existe en la URL
+                    destino.
+                </li>
+                <li>Patch: aplicar modificaciones parciales a algún recurso.</li>
+                <li>Delete: elimina un recurso en específico.</li>
+            </ol>
+            <p>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu
+                usuario y
+                contraseña en algún sitio? ¿Por qué?
+                Se debe de utilizar el método post, debido que la información va oculto</p>
+            <p>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un
+                URL?
+                GET</p>
+            <p>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún
+                error?
+                No ocurrió ningún error, es un código de respuesta exitosa de HTTP</p>
+            <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder
+                al
+                sitio y se encontró con un error 404? ¿Por qué?
+                No es responsabilidad del desarrollador debido a que 404 es de un link no disponible, roto o oculto
+                por
+                el
+                desarrollador</p>
+            <p>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder
+                al
+                sitio y se encontró con un error 500? ¿Por qué?
+                Si, representa error de parte del servidor.</p>
+            <p>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos
+                elementos
+                de HTML 4 que en HTML5 estén desaprobados.
+                Son tags que han sido reemplazadas por tags más nuevas y útiles. por ejemplo: <br>
+                &lt;acronym&gt;, &lt;applet&gt;, &lt;basefont&gt;, &lt;big&gt;, &lt;center&gt;, &lt;dir&gt;,
+                &lt;font&gt;,
+                &lt;frame&gt;,
+                &lt;frameset&gt;, &lt;isindex&gt;, &lt;noframes&gt;, &lt;s&gt;, &lt;strike&gt;, &lt;tt&gt; y
+                &lt;u&gt; </p>
+
+            <p>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
+                Apoyo de multimedia
+                Más estandarizado
+                Tags nuevos y más adecuados
+                Mejor manejo de errores</p>
+            <p>¿Qué componentes de estructura y estilo tiene una tabla?<br>
+                Estructura: &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;caption&gt;, &lt;colgroup&gt;,
+                &lt;col&gt;,
+                &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt; <br>
+                Estilo: border, border-collapse, border-spacing, padding, text-align, colspan y rowspan.</p>
+
+            <p>¿Cuáles son los principales controles de una forma HTML5?
+                &lt;label&gt;, &lt;input&gt;, zonas de texto, botones radio, checkboxes, botón de envío y varios
+                otros
+                atributos.</p>
+            <p>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para
+                descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que
+                utilizas)
+                Utilizo chrome, 473/555.</p>
+            <p>¿Cuál es el ciclo de vida de los sistemas de información?</p>
+            <ol>
+                <li>Investigación</li>
+                <li>Analizis de Requerimientos</li>
+                <li>Diseño del sistema</li>
+                <li>Testing</li>
+                <li>Implementación</li>
+                <li>Evaluacion</li>
+            </ol>
+            <p> ¿Cuál es el ciclo de desarrollo de sistemas de información?</p>
+            <ol>
+                <li>Planificación del sistema</li>
+                <li>Analizis</li>
+                <li>Diseño del sistema</li>
+                <li>Desarrollo</li>
+                <li>Testing</li>
+                <li>Implementación</li>
+                <li>Mantenimiento</li>
+            </ol>
+
+        </section>
+        <section>
+            <h2 class="display-4 my-2">Material Design</h2>
+            <p>
+                Un sistema de diseño creado por google que permite a equipos trabajar en colaborativo para lograr una gran calidad de diseño
+            </p>
+            <p>
+                Se inspira por la refleccion de las sombras y texturas. El movimiento tiene un proposito
+            </p>
+            <iframe width="1903" height="838" src="https://www.youtube.com/embed/rrT6v5sOwJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1903" height="838" src="https://www.youtube.com/embed/8AkLfYOgIrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </section>
+    <section id="Ref" class="m-2">
+        <h2 class="display-4 mb-2">Referncias</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL"
+                    target="_blank">https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL</a>
+            </li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types"
+                    target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types</a>
+            </li>
+            <li><a href="https://www.techonthenet.com/html/mime_type.php"
+                    target="_blank">https://www.techonthenet.com/html/mime_type.php</a></li>
+            <li><a href="https://medium.com/adalab/what-is-html5-and-what-can-i-do-with-it-d6bc85eb8af9"
+                    target="_blank">https://medium.com/adalab/what-is-html5-and-what-can-i-do-with-it-d6bc85eb8af9</a>
+            </li>
+            <li><a href="https://www.php.net/" target="_blank">https://www.php.net/</a></li>
+            <li><a href="https://www.tutorialspoint.com/jsp/index.htm"
+                    target="_blank">https://www.tutorialspoint.com/jsp/index.htm</a></li>
+            <li><a href="https://www.w3schools.com/xml/ajax_intro.asp"
+                    target="_blank">https://www.w3schools.com/xml/ajax_intro.asp</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"
+                    target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a></li>
+            <li><a href="https://www.htmlgoodies.com/tutorials/html_401/html4-ref/article.php/3460291"
+                    target="_blank">https://www.htmlgoodies.com/tutorials/html_401/html4-ref/article.php/3460291</a>
+            </li>
+            <li>Kyle Simpson, You don’t know JS yet, pag 5-10, 2020.</li>
+
+            <li><a href="https://material.io/design/introduction#components"
+                target="_blank">https://material.io/design/introduction#components</a>
+        </li>
+        </ul>
+    </section>
+    
+
+    <footer class="mx-4">
+        <!--footer-->
+        <p>Editor usado: Visual Studio Code <br> Get it here: <a
+                href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

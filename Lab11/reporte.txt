@@ -1,0 +1,10 @@
+¿Qué efecto tuvo esta acción?
+	Creo todos los archivos de golpe
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+	H�t�H��H�tL�L�D�A��H�H�H��
+Qué relación tienen con las tablas de la base de datos?
+	L�L�D�A��H�H
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+	�H�tL�L�D�A��H�H�H�
+¿Qué sucedió?
+	a�H�tL�L�D�A��H�H�H�

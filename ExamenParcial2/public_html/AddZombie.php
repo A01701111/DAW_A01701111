@@ -10,13 +10,17 @@
         }
         return substr(bin2hex($bytes), 0, $lenght);
     }
-    function addZombie($Nombre){
+    function addZombie($Nombre,$estado){
         require_once("Util.php");
         $con = connectToDB();
         $id_Zombie = uniqidReal();
         $query = "CALL `AddZombie` ($Nombre, $id_Zombie)";
         $res = mysqli_query($con, $query);
+        $query2 = "CALL `AddEstadoZombie` ($id_Zombie,$estado)";
+        $res2 = mysqli_query($con,$query2 );
         closeDB($con);
+        return $res;
+        
 }
 
 ?>

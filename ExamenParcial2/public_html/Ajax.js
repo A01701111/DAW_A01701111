@@ -12,55 +12,25 @@ $(document).ready(function() {
         $('#tabla').html(response);
     });
 
-    $("#FormZombie").submit(function(event){
-        let request;
+    // $("#FormZombie").submit(function(event){
+    //     let request;
 
-        event.preventDefault();
+    //     event.preventDefault();
     
-        if (request) {
-            request.abort();
-        }
+    //     if (request) {
+    //         request.abort();
+    //     }
 
-        let $form = $(this);
+    //     let $form = $(this);
     
-        let $inputs = $form.find("input, select, button, textarea");
+    //     let $inputs = $form.find("input, select, button, textarea");
     
-        let serializedData = $form.serialize();
+    //     let serializedData = $form.serialize();
     
-        $inputs.prop("disabled", true);
+    //     $inputs.prop("disabled", true);
     
-        // request = $.ajax({
-        //     url: "getTotal.php",
-        //     type: "post",
-        //     data: serializedData
-        // });
-    
-        // request.done(function (response, textStatus, jqXHR){
-        //     // Log a message to the console
-        //     console.log(response);
-        //     $( '#FormZombie' ).each(function(){
-        //         this.reset();
-        //     });
-        //     $('#total').html(response);
-        // });
-    
-        // // Callback handler that will be called on failure
-        // request.fail(function (jqXHR, textStatus, errorThrown){
-        //     // Log the error to the console
-        //     console.error(
-        //         "The following error occurred: "+
-        //         textStatus, errorThrown
-        //     );
-        // });
-    
-        // // Callback handler that will be called regardless
-        // // if the request failed or succeeded
-        // request.always(function () {
-        //     // Reenable the inputs
-        //     $inputs.prop("disabled", false);
-        // });
-    
-    });
+        
+    // });
 
     
 

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     let request;
     request = $.ajax({
         url: "DisplayZombies.php",
@@ -7,7 +6,6 @@ $(document).ready(function() {
     });
 
     request.done(function (response, textStatus, jqXHR){
-        // Log a message to the console
         console.log(response);
         $('#tabla').html(response);
     });

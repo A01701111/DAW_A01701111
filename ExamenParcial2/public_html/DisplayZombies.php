@@ -12,14 +12,19 @@
         echo "<th scope='col'>Fecha</th>";
         echo "</tr>";
         echo "</thead>";
+        echo "<tbody>";
         while($row = mysqli_fetch_assoc($res)){
+            $name=getName($row["id_Zombies"]);
+            $result =mysqli_fetch_array($name); 
             echo "<tr>";
-            echo "<td scope='row'>" . $row["Nombre"]      . "</td>";
+            echo "<td scope='row'>" . $result[0] . "</td>";
             echo "<td>" . $row["Estado"]  . "</td>";
             echo "<td>" . $row["Fecha"]     . "</td>";
             echo "</tr>";
         }
+        echo "</tbody>";
         echo "</table>";
+        echo "</div>";
 
 
     }

@@ -19,5 +19,9 @@
             echo "</tr>";
         }
         echo "</table>";
+        echo "</div>";
+    }
+    else{
+        echo "<p>Table is empty</p>";
     }
 ?>
